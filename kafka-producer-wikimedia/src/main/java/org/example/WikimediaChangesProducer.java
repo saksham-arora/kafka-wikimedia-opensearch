@@ -20,7 +20,7 @@ public class WikimediaChangesProducer {
 //        properties.setProperty(ProducerConfig, StringSerializer.class.getName());
         properties.setProperty("sasl.mechanism", "PLAIN");
         properties.setProperty("security.protocol", "SASL_SSL");
-        properties.setProperty("sasl.jaas.config", "org.apache.kafka.common.security.plain.PlainLoginModule required username='8ipX7HmsHMWCc4YRSJHPd' password='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29uZHVrdG9yLmlvIiwic291cmNlQXBwbGljYXRpb24iOiJhZG1pbiIsInVzZXJNYWlsIjpudWxsLCJwYXlsb2FkIjp7InZhbGlkRm9yVXNlcm5hbWUiOiI4aXBYN0htc0hNV0NjNFlSU0pIUGQiLCJvcmdhbml6YXRpb25JZCI6NzE2MjYsInVzZXJJZCI6ODMwNTgsImZvckV4cGlyYXRpb25DaGVjayI6IjdkMzc0MGJmLTZlZDQtNDE0MS1iY2U3LTcxYTgzOTk0MTg1MyJ9fQ.EaJf82zq0zhPbPmAmX4UTn6P5oPZSDmxzvUkFYQUxXs';");
+        properties.setProperty("sasl.jaas.config", "org.apache.kafka.common.security.plain.PlainLoginModule required username='8ipX7HmsHMWCc4YRSJHPd' password='pwd';");
 
 
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
